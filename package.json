@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "NODE_ENV=production node index.js",
+    "dev": "USE_VITE_MIDDLEWARE=true NODE_ENV=development nodemon index.js"
   },
   "keywords": [],
   "author": "Subham Saha",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^8.16.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "vite": "^7.2.4"
+  }
 }
